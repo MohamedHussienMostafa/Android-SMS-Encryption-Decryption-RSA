@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   
+    <Button
+	    
+        android:id="@+id/showEncKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Enc. Key" />
+    
+    <TextView
+
+        android:id="@+id/encryptedKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encryption Key"
+        android:layout_below="@id/showEncKey"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp" />
+
+
+	<Button
+	    
+        android:id="@+id/decrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encryptedKey"
+        android:text="Decrypt Received Message" />
+
+
+    
+    <TextView
+        android:id="@+id/decryptedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Decryption Message"
+        android:layout_below="@id/decrypt"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp" />
+
+
+    </RelativeLayout>

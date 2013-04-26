@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android RSA Project" />
+
+
+        <EditText
+		        android:id="@+id/textToEncrypt"
+		
+		        android:layout_width="wrap_content"
+		
+		        android:layout_height="wrap_content"
+		        
+		        android:layout_below="@id/appName"
+		
+		        android:layout_marginTop="5dp" />
+        
+            <EditText
+		        android:id="@+id/phoneno"
+		
+		        android:layout_width="wrap_content"
+		
+		        android:layout_height="wrap_content"
+				
+				android:layout_below="@id/textToEncrypt"
+		
+		        android:layout_marginTop="5dp" />
+            
+                
+    <Button
+			android:id="@+id/clicktoencrypt"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/phoneno"
+			
+			android:text="Encrypt Your Message Only" />
+    
+     <Button
+        android:id="@+id/Send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clicktoencrypt"
+        android:text="Encrypt And Send The Message" />
+
+
+
+    </RelativeLayout>
